@@ -1,0 +1,49 @@
+.social-icon {
+    height: 60px;
+    padding: 0 6px;
+    fill: $header-bg;
+}
+
+.next,
+.prev {
+    height: 40px;
+    padding: 0 6px;
+    display: inline-block;
+}
+
+path {
+    fill: $black-olive !important;
+    transition: fill .5s ease-in-out;
+}
+
+path:hover {
+    fill: lighten($black-olive, 20%) !important;
+}
+
+.header-img {
+    @include image;
+    @include medq($break-m) {
+        margin: auto 20px;
+    }
+}
+
+.project-img {
+    @include image;
+}
+.photo {
+    margin: 10px 20px;
+    max-width: 600px;
+}
+.photo img {
+    padding: 6px;
+    border: 1px solid $black-olive;
+    border-radius: 6px;
+    width: 100%;
+    opacity: .5;
+    transition: opacity .4s ease-in;
+}
+
+.photo img:hover {
+    opacity: 1;
+}
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Claire Tregunna - FEWD</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="main-nav">
+            <ul class="wide-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#gallery">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>  <!--href="javascript:void(0)" this was included, is it needed-->
+                <div class="overlay-content">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#gallery">Photos</a>
+                <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <span id="menuIcon">&#9776;</span>
+        </nav>
+        <header>
+            <div class="headings">
+                <h1 class="slide-in-blurred-left">Claire Tregunna</h1>
+                <div class="slide-in-blurred-left-hr header-hr"><hr></div>
+                <h2 class="slide-in-blurred-left-delay">Developing Web Developer</h2>
+            </div>
+            <img src="img/Claire_Tregunna_Avatar.png" alt="Avatar of Claire Tregunna Front End Web Developer" class="header-img">
+        </header>
+        <div class="about-container" >
+            <section id="about">
+                <h2 class="section-header">All About Me</h2>
+                <p>I have been down a few paths in my life, but I don’t think any have challenged me more than taking on the task of learning about web development. I have been a chef, a waitress, worked at a pet shop, managed a Boarding Cattery and managed an Animal Rescue Shelter. I now look to try my hand at something new and exciting.</p>
+                <p>I am self taught, using the internet and the fantastic <a href="https://teamtreehouse.com/clairetregunna2" target="_blank" rel="noopener"> Treehouse</a>. I continue to learn daily, building on my skills and knowledge to create new and exciting projects or small site snippets.</p>
+                <p>When I am not at my laptop I enjoy photography when I get a chance to explore, cooking and catching up on some sleep, hoping to not get woken by our 2 cats.</p>
+                <p>If you want to know more, keep on scrolling to see my work so far and how to get in touch to say hi.</p>
+            </section>
+            <section class="skills">
+                <h2 class="section-header">Web Development Skills</h2>
+                <canvas id="mySkills"></canvas>
+            </section>
+        </div>
+        <div id="work">
+            <section>
+                <h2 class="section-header">My Work So Far</h2>
+                <div class="portfolio-contain">
+                    <div class="project pro-1">
+                        <img src="img/projects/code-review.jpeg" alt="Screen shot of a form website named Code Review" class="project-img">
+                        <div class="work-overlay">
+                            <div class="project-container">
+                                <h3 class="project-title">Code Review Form</h3>
+                                <hr class="hr">
+                                <p class="project-paragraph">A simple sign up form built using flexbox</p>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://github.com/c-tregunna/Tech-Degree-Project-03" target="_blank" rel="noopener" class="project-link">github</a>
+                                <a href="https://c-tregunna.github.io/Tech-Degree-Project-03/" target="_blank" rel="noopener" class="project-link">go live!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project pro-2">
+                        <img src="img/projects/sass-circles.jpeg" alt="Screen shot of a website built with sass" class="project-img">
+                        <div class="work-overlay">
+                            <div class="project-container">
+                                <h3 class="project-title">Circles Mock Up</h3>
+                                <hr class="hr">
+                                <p class="project-paragraph">A sample mock up built utilizing Sass</p>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://github.com/c-tregunna/Tech-Degree-Project-04" target="_blank" rel="noopener" class="project-link">github</a>
+                                <a href="https://c-tregunna.github.io/Tech-Degree-Project-04/" target="_blank" rel="noopener" class="project-link">go live!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project pro-3">
+                        <img src="img/projects/photo-gallery.jpeg" alt="Screen shot of a photo gallery that uses jQuery plugin" class="project-img">
+                        <div class="work-overlay">
+                            <div class="project-container">
+                                <h3 class="project-title">Photo Gallery with Light Box</h3>
+                                <hr class="hr">
+                                <p class="project-paragraph">A simple photo gallery with a jQuery lightbox plugin and search function</p>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://github.com/c-tregunna/Tech-Degree-Project-05" target="_blank" rel="noopener" class="project-link">github</a>
+                                <a href="https://c-tregunna.github.io/Tech-Degree-Project-05/" target="_blank" rel="noopener" class="project-link">go live!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project pro-4">
+                        <img src="img/projects/wheel-of-success.jpeg" alt="Screen shot of a Wheel of Fortune website using JavaScript" class="project-img">
+                        <div class="work-overlay">
+                            <div class="project-container">
+                                <h3 class="project-title">Wheel of Fortune</h3>
+                                <hr class="hr">
+                                <p class="project-paragraph">Guess the movie interactive game built using JavaScript</p>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://github.com/c-tregunna/Tech-Degree-Project-06" target="_blank" rel="noopener" class="project-link">github</a>
+                                <a href="https://c-tregunna.github.io/Tech-Degree-Project-06/" target="_blank" rel="noopener" class="project-link">go live!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project pro-5">
+                        <img src="img/projects/dashboard.jpeg" alt="Screen shot of a website dashboard" class="project-img">
+                        <div class="work-overlay">
+                            <div class="project-container">
+                                <h3 class="project-title">App Dashboard</h3>
+                                <hr class="hr">
+                                <p class="project-paragraph">A mock up app dashboard built using Grid, chart.js, SVG's and JavaScript</p>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://github.com/c-tregunna/Tech-Degree-Project-07" target="_blank" rel="noopener" class="project-link">github</a>
+                                <a href="https://c-tregunna.github.io/Tech-Degree-Project-07/" target="_blank" rel="noopener" class="project-link">go live!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project pro-6">
+                        <img src="img/projects/employee-index.jpeg" alt="Screen shot of an employee index website" class="project-img">
+                        <div class="work-overlay">
+                            <div class="project-container">
+                                <h3 class="project-title">Employee Directory</h3>
+                                <hr class="hr">
+                                <p class="project-paragraph">A simple employee directory, fetching and showing data through an API and JavaScript, with modals and a search function</p>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://github.com/c-tregunna/Tech-Degree-Project-08" target="_blank" rel="noopener" class="project-link">github</a>
+                                <a href="https://c-tregunna.github.io/Tech-Degree-Project-08/" target="_blank" rel="noopener" class="project-link">go live!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="gallery-container" id="gallery">
+            <h2 class="photo-title">Some of my photos</h2>
+            <p>Hover over to have a closer look and click the arrows to view more</p>
+            <div class="photo-container">
+                <img src="img/svg/leftArrow.svg" class="prev" alt="previous quote arrow">
+                <div class="photo">
+                <!-- Photos will be added from javascript here -->
+                </div>
+                <img src="img/svg/rightArrow.svg" class="next" alt="previous quote arrow">
+            </div>
+        </section>
+        <footer id="contact">
+            <p class="copyright">&copy; Claire Tregunna - <span id="date"></span></p>
+            <p class="email-add"><a href="mailto:clairet.dev@gmail.com?subject=Email%20from%20portfolio%20site" target="_blank">clairet.dev@gmail.com</a></p>
+            <div class="social">
+                <!-- <?xml version="1.0" encoding="utf-8"?> -->
+                <!-- Generate more at customizr.net -->
+                <!-- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+                <a href="https://github.com/c-tregunna" target="_blank" rel="noopener">
+                    <svg id="github" class="social-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" ><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: $header-bg;"></circle>
+                        <path class="inner-shape" style="opacity:1;fill:black;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M79.099,79.099 c-3.782,3.782-8.184,6.75-13.083,8.823c-1.245,0.526-2.509,0.989-3.79,1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 c1.659-0.16,3.182-0.383,4.57-0.67c1.388-0.287,2.855-0.702,4.402-1.245c1.547-0.543,2.935-1.189,4.163-1.938 c1.228-0.75,2.409-1.723,3.541-2.919s2.082-2.552,2.847-4.067s1.372-3.334,1.818-5.455c0.446-2.121,0.67-4.458,0.67-7.01 c0-4.945-1.611-9.155-4.833-12.633c1.467-3.828,1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321,0.255-4.474,1.053 c-2.153,0.798-4.57,2.105-7.249,3.924c-3.797-1.053-7.736-1.579-11.82-1.579c-4.115,0-8.039,0.526-11.772,1.579 c-1.69-1.149-3.294-2.097-4.809-2.847c-1.515-0.75-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503 c-0.782-0.064-1.284-0.079-1.507-0.048c-0.223,0.031-0.383,0.064-0.478,0.096c-1.787,4.53-1.946,8.694-0.478,12.489 c-3.222,3.477-4.833,7.688-4.833,12.633c0,2.552,0.223,4.889,0.67,7.01c0.447,2.121,1.053,3.94,1.818,5.455 c0.765,1.515,1.715,2.871,2.847,4.067s2.313,2.169,3.541,2.919c1.228,0.751,2.616,1.396,4.163,1.938 c1.547,0.543,3.014,0.957,4.402,1.245c1.388,0.287,2.911,0.511,4.57,0.67c-2.616,1.787-3.924,4.626-3.924,8.517v7.487 c-1.445-0.43-2.869-0.938-4.268-1.53c-4.899-2.073-9.301-5.041-13.083-8.823c-3.782-3.782-6.75-8.184-8.823-13.083 C9.934,60.948,8.847,55.56,8.847,50s1.087-10.948,3.231-16.016c2.073-4.899,5.041-9.301,8.823-13.083s8.184-6.75,13.083-8.823 C39.052,9.934,44.44,8.847,50,8.847s10.948,1.087,16.016,3.231c4.9,2.073,9.301,5.041,13.083,8.823 c3.782,3.782,6.75,8.184,8.823,13.083c2.143,5.069,3.23,10.457,3.23,16.016s-1.087,10.948-3.231,16.016 C85.848,70.915,82.88,75.317,79.099,79.099L79.099,79.099z"></path>
+                    </svg>
+                </a>
+                <!-- <?xml version="1.0" encoding="utf-8"?> -->
+                <!-- Generate more at customizr.net -->
+                <!-- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+                <a href="https://twitter.com/c_tregunna" target="_blank" rel="noopener">
+                    <svg id="twitter" class="social-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: $header-bg;"></circle>
+                        <path class="inner-shape" style="opacity:1;fill:black;" transform="translate(25,25) scale(0.5)" d="M99.001,19.428c-3.606,1.608-7.48,2.695-11.547,3.184c4.15-2.503,7.338-6.466,8.841-11.189 c-3.885,2.318-8.187,4-12.768,4.908c-3.667-3.931-8.893-6.387-14.676-6.387c-11.104,0-20.107,9.054-20.107,20.223 c0,1.585,0.177,3.128,0.52,4.609c-16.71-0.845-31.525-8.895-41.442-21.131C6.092,16.633,5.1,20.107,5.1,23.813 c0,7.017,3.55,13.208,8.945,16.834c-3.296-0.104-6.397-1.014-9.106-2.529c-0.002,0.085-0.002,0.17-0.002,0.255 c0,9.799,6.931,17.972,16.129,19.831c-1.688,0.463-3.463,0.71-5.297,0.71c-1.296,0-2.555-0.127-3.783-0.363 c2.559,8.034,9.984,13.882,18.782,14.045c-6.881,5.424-15.551,8.657-24.971,8.657c-1.623,0-3.223-0.096-4.796-0.282 c8.898,5.738,19.467,9.087,30.82,9.087c36.982,0,57.206-30.817,57.206-57.543c0-0.877-0.02-1.748-0.059-2.617 C92.896,27.045,96.305,23.482,99.001,19.428z"></path>
+                    </svg>
+                </a>
+            </div>
+
+        </footer>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

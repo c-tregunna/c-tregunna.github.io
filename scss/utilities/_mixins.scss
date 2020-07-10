@@ -1,0 +1,38 @@
+//Mixins
+
+@mixin image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+@mixin flexMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin links {
+    text-decoration: none;
+    color: $black-olive;
+    transition: color .4s ease-in-out;
+}
+
+@mixin linksHover {
+  color: $flame;
+  cursor: pointer;
+}
+
+  @mixin medq($break) {
+    @media (min-width: $break-m) {
+      @content;
+    }
+  }
+
+  @mixin medqL($break) {
+    @media (min-width: $break-l) {
+      @content;
+    }
+  }

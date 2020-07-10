@@ -1,0 +1,44 @@
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $text;
+    letter-spacing: 2px;
+}
+header h1 {
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    @include medqL($break-l) {
+        font-size: 2.4em;
+    }
+}
+
+header h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: lighten($black-olive, 20%);
+    @include medqL($break-l) {
+        font-size: 1.8em;
+    }
+}
+
+h2.section-header {
+    text-align: center;
+}
+
+.quote {
+    border-top: 1px solid $black-olive-a;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    margin: 20px auto;
+    flex-grow: 4;
+    text-shadow: 1px 1px 1px $black-olive;
+}

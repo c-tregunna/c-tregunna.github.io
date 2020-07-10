@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+}
+
+body {
+    background: $floral-white;
+    font-family: $text;
+    font-weight: 300;
+    color: $black-olive;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $header-bg;
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column-reverse;
+    @include medq($break-m) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.header-hr {
+    width: 70%;
+    margin: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    @include medqL($break-l) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: flex-start;
+    }
+}
+#about,
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: justify;
+    @include medqL($break-l) {
+        width: 40%;
+    }
+}
+#work {
+    width: 100%;
+    padding: 10px;
+}
+
+.portfolio-contain {
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr;
+    @include medq($break-m) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include medqL($break-l) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+//--------------
+// Portfolio blocks
+//--------------
+
+.project {
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $pale-silver;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.work-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: $header-bg;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 8px;
+    transition: all .4s ease-in-out;
+  }
+
+  .project p.project-paragraph {
+      width: 90%;
+      text-align: center;
+  }
+
+  .project:hover .work-overlay {
+    opacity: 1;
+  }
+
+  .project:hover {
+    box-shadow: 0 1px 4px $black-olive;
+    border-color: lighten($black-olive, 50%);
+  }
+
+  .project:hover h4.project-title,
+  .project:hover hr.hr{
+    animation: projectSlideIn 1.5s forwards;
+  }
+
+
+  .project:hover p.project-paragraph  {
+    animation: projectSlideInRev 1.5s forwards;
+  }
+
+  .project hr.hr {
+      width: 80%;
+      border-top: 1px solid $flame;
+  }
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.gallery-container p {
+    text-align: center;
+}
+
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+footer {
+    background-color: $header-bg;
+    color: $black-olive;
+    @include flexMobile;
+    @include medq($break-m) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        .email-add {
+            order: 5;
+        }
+    }
+}
+
+
