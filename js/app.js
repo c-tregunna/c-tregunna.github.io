@@ -91,7 +91,7 @@ const photos = [
       text: 'Image of Porto Santo island'
     },
     {
-      photo: 'img/lochNess.jpg',
+      photo: 'img/lochNessy.jpg',
       text: 'Image of Loch Ness'
     },
     {
