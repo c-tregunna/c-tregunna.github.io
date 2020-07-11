@@ -147,7 +147,6 @@ header {
   border-color: #c0bdb8;
 }
 
-.project:hover h4.project-title,
 .project:hover hr.hr {
   animation: projectSlideIn 1.5s forwards;
 }
@@ -318,6 +317,10 @@ header h2 {
 }
 
 h2.section-header {
+  text-align: center;
+}
+
+h3.project-title {
   text-align: center;
 }
 

@@ -135,11 +135,9 @@ header {
     border-color: lighten($black-olive, 50%);
   }
 
-  .project:hover h4.project-title,
   .project:hover hr.hr{
     animation: projectSlideIn 1.5s forwards;
   }
-
 
   .project:hover p.project-paragraph  {
     animation: projectSlideInRev 1.5s forwards;
