@@ -9,7 +9,16 @@ const menu = document.getElementById("myNav");
 const links = document.querySelector(".overlay-content");
 
 menuIcon.addEventListener('click', () => { // on click of menu icon hide the main-nav background and icon
-    menuIcon.style.display = "none";
+    //menuIcon.style.display = "none";
+    window.onresize = function() {
+
+    if (window.innerWidth > 768) {
+      menuIcon.style.display = 'none';
+    } else {
+      menuIcon.style.display = 'block';
+    }
+  }
+
     mainNav.style.backgroundColor = "transparent";
     mainNav.style.transition = "all 1s";
     menu.style.width = "100%";
@@ -91,7 +100,7 @@ const photos = [
       text: 'Image of Porto Santo island'
     },
     {
-      photo: 'img/lochNessy.jpg',
+      photo: 'img/lochNess.jpg',
       text: 'Image of Loch Ness'
     },
     {
